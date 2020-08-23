@@ -273,29 +273,29 @@
   #else
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 200, 200, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 500, 5000 }
 
-  #define DEFAULT_ACCELERATION          1000   
-  #define DEFAULT_RETRACT_ACCELERATION  1000  
-  #define DEFAULT_TRAVEL_ACCELERATION   1000   
-  
+  #define DEFAULT_ACCELERATION          1000
+  #define DEFAULT_RETRACT_ACCELERATION  1000
+  #define DEFAULT_TRAVEL_ACCELERATION   1000
+
   #define DEFAULT_XJERK                 7.0
   #define DEFAULT_YJERK                 7.0
   #define DEFAULT_ZJERK                 0.3
   #define DEFAULT_EJERK                 5.0
-  
+
   #define INVERT_X_DIR true
   #define INVERT_Y_DIR true
   #define INVERT_Z_DIR false
-  
+
   #if ENABLED(REVERSE_E_MOTOR_DIRECTION)
     #define INVERT_E0_DIR false
   #else
     #define INVERT_E0_DIR true
   #endif
-    
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_ZRIB_V20
   #endif
@@ -311,10 +311,10 @@
     #define X_MIN_POS -15
     #define Y_MIN_POS -21
   #endif
-  
+
   //#define ENCODER_PULSES_PER_STEP 4
   //#define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define PRINTER_ENABLED_CHECK
 
 #endif
@@ -1026,7 +1026,7 @@
   #else
     #define INVERT_Z_DIR true
   #endif
-  
+
   #if MKS_E0_DIRECTION == 0
     #define INVERT_E0_DIR false
   #else
@@ -1502,12 +1502,12 @@
   #define STOCK_MKS_PRINTER
   #define DIRECT_DRIVE_PRINTER
 
-  #define X_DRIVER_TYPE  TMC2100  
+  #define X_DRIVER_TYPE  TMC2100
   #define Y_DRIVER_TYPE  TMC2100
   #define Z_DRIVER_TYPE  TMC2100
   #define E0_DRIVER_TYPE TMC2100
   #define Z2_DRIVER_TYPE TMC2100
-  
+
   #define MKS_MINI_12864
   #define BAUDRATE 250000
 
@@ -1518,29 +1518,29 @@
   #define Y_MAX_ENDSTOP_INVERTING true
   #define Z_MAX_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_ENDSTOP_INVERTING true
-  
+
   #if ENABLED(CUSTOM_ESTEPS)
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, CUSTOM_ESTEPS_VALUE }
   #else
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 463 }
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
   #define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 1000, 5000 }
 
-  #define DEFAULT_ACCELERATION          1000    
-  #define DEFAULT_RETRACT_ACCELERATION  1000   
-  #define DEFAULT_TRAVEL_ACCELERATION   1000    
-  
+  #define DEFAULT_ACCELERATION          1000
+  #define DEFAULT_RETRACT_ACCELERATION  1000
+  #define DEFAULT_TRAVEL_ACCELERATION   1000
+
   #define DEFAULT_XJERK                 10.0
   #define DEFAULT_YJERK                 10.0
   #define DEFAULT_ZJERK                  0.4
   #define DEFAULT_EJERK                  5.0
-  
+
   #define INVERT_X_DIR false
   #define INVERT_Y_DIR false
   #define INVERT_Z_DIR true
-  
+
   #if ENABLED(REVERSE_E_MOTOR_DIRECTION)
     #define INVERT_E0_DIR true
   #else
@@ -1550,7 +1550,7 @@
   #define X_BED_SIZE 300
   #define Y_BED_SIZE 300
   #define Z_MAX_POS 400
-  
+
   #if ENABLED(HOME_ADJUST)
     #define X_MIN_POS X_HOME_ADJUST_LOCATION
     #define Y_MIN_POS Y_HOME_ADJUST_LOCATION
@@ -1558,10 +1558,10 @@
     #define X_MIN_POS 0
     #define Y_MIN_POS 0
   #endif
-  
+
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
-  
+
   #define PRINTER_ENABLED_CHECK
 
   #define RGB_LED
@@ -1569,7 +1569,7 @@
   #define RGB_LED_G_PIN 4
   #define RGB_LED_B_PIN 6
   #define PRINTER_EVENT_LEDS
-  
+
 #endif
 
 //Artillery AL-4 Settings
@@ -2220,18 +2220,18 @@
 #if ENABLED(ALI_A10S)
   #define SLIM_1284P
   #define BAUDRATE 115200
-  
+
   #if ENABLED(EZOUTV2_ENABLE)
     #define SPEAKER_KILL
   #endif
-  
+
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_MELZI_MAKR3D
   #endif
   #define IS_WANHAO_DI3
 
   #define DIRECT_DRIVE_PRINTER
-  
+
   #define X_MIN_ENDSTOP_INVERTING true
   #define Y_MIN_ENDSTOP_INVERTING true
   #define Z_MIN_ENDSTOP_INVERTING true
@@ -2245,14 +2245,14 @@
   #else
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100 }
   #endif
-  
+
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
 
   #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 500, 5000 }
-  
-  #define DEFAULT_ACCELERATION          700    
-  #define DEFAULT_RETRACT_ACCELERATION  3000   
-  #define DEFAULT_TRAVEL_ACCELERATION   700    
+
+  #define DEFAULT_ACCELERATION          700
+  #define DEFAULT_RETRACT_ACCELERATION  3000
+  #define DEFAULT_TRAVEL_ACCELERATION   700
 
   #define X_BED_SIZE 300
   #define Y_BED_SIZE 300
@@ -2292,7 +2292,7 @@
   #endif
 
   #define LCD_FOR_MELZI
-  
+
   #define PRINTER_ENABLED_CHECK
 #endif //Aliexpress A-10S settings
 
@@ -2399,9 +2399,9 @@
 			#define Y_BED_SIZE 235
 			#define Z_MAX_POS 500
 		#else
-			#define X_BED_SIZE 235
+			#define X_BED_SIZE 200 //ABR: Reduced X-range due to direct drive motor getting in the way
 			#define Y_BED_SIZE 235
-			#define Z_MAX_POS 250
+			#define Z_MAX_POS 200 //ABR: Reduced X-range due to direct drive motor getting in the way
 		#endif
   #endif
   
@@ -2446,7 +2446,7 @@
   #endif
 
   #if ENABLED(CRX) && ENABLED(EZOUTV2_ENABLE)
-    #define EZOUTV2_DUAL_ENABLE 
+    #define EZOUTV2_DUAL_ENABLE
   #endif
 
   #define X_MIN_ENDSTOP_INVERTING false
@@ -2481,7 +2481,7 @@
   #define DEFAULT_EJERK                  5.0
   
   #define INVERT_X_DIR false
-  
+
   #if ENABLED(CRX)
     #define INVERT_Y_DIR true
   #else
@@ -3186,7 +3186,7 @@
 #define ENDSTOP_NOISE_FILTER_SAMPLING 2
 
 #if ENABLED(SLIM_1284P)
-  #define SLIM_LCD_MENUS
+  //#define SLIM_LCD_MENUS //ABR: Seems I get my controls back with this
   #if ENABLED(LINEAR_ADVANCE)
     #define DISABLE_BOOT
   #elif ENABLED(EZABL_ENABLE)
@@ -3443,7 +3443,7 @@
     #define FIX_MOUNTED_PROBE
   #endif
   #define Z_PROBE_OFFSET_FROM_EXTRUDER 0
-  
+
   #if ENABLED(PROBING_MOTORS_OFF)
     #define XY_PROBE_SPEED 8000
   #else
@@ -3457,13 +3457,13 @@
       #endif
     #endif
   #endif
-  
+
   #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
   #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2)  
   #if ENABLED(FIX_MOUNTED_PROBE) && DISABLED(HEATERS_ON_DURING_PROBING)
     #define PROBING_HEATERS_OFF   
   #endif  
-  
+
   #define MULTIPLE_PROBING 2
 
   #if ENABLED(BLTOUCH)
@@ -3481,7 +3481,7 @@
     #define Z_CLEARANCE_BETWEEN_PROBES 3
     #define Z_CLEARANCE_MULTI_PROBE    3
   #endif
-  
+
   #define Z_PROBE_OFFSET_RANGE_MIN  -5
   #define Z_PROBE_OFFSET_RANGE_MAX  1  
   #define Z_MIN_PROBE_REPEATABILITY_TEST  
@@ -3615,10 +3615,11 @@
   #define LCD_BED_LEVELING
   #define MESH_BED_LEVELING
   #define MBL_Z_STEP 0.025    
-  #define LCD_PROBE_Z_RANGE 4 
-  #define MESH_INSET 10          
+  #define LCD_PROBE_Z_RANGE 4
+  #define MESH_INSET 25 //     ABR: Better margin to avoid clips and other problems
   #define GRID_MAX_POINTS_X 5    
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
+  #define RESTORE_LEVELING_AFTER_G28 //ABR: Do not disable bed leveling on AUTO HOME
 #endif
 
 #if ENABLED(MESH_BED_LEVELING) || ENABLED(AUTO_BED_LEVELING_BILINEAR) || ENABLED(AUTO_BED_LEVELING_UBL)
@@ -3657,13 +3658,14 @@
 
 #define PRINTJOB_TIMER_AUTOSTART
 
-#define DISPLAY_CHARSET_HD44780 JAPANESE
+#define DISPLAY_CHARSET_HD44780 WESTERN
 
 #define SDSUPPORT
 
 #define DISABLE_REDUCED_ACCURACY_WARNING
 
-#define INDIVIDUAL_AXIS_HOMING_MENU
+//ABR: I do not need this menu
+//#define INDIVIDUAL_AXIS_HOMING_MENU
 
 #if DISABLED(EZABL_ENABLE)
   #define LEVEL_BED_CORNERS
