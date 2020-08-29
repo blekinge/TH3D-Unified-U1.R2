@@ -953,9 +953,9 @@
 // Example EStep Values: TH3D Aluminum Extruder - 95 ESteps, TH3D Tough Extruder - 463 ESteps, BMG Extruder - 415 ESteps
 // When installing a Tough Extruder or E3D Titan or Bondtech that is Geared you likely need to enable the REVERSE_E_MOTOR_DIRECTION option
 
-#define CUSTOM_ESTEPS //ABR: We need 100, otherwise underextrution
+#define CUSTOM_ESTEPS //ABR: We need 99, otherwise underextrution
 //#define REVERSE_E_MOTOR_DIRECTION
-#define CUSTOM_ESTEPS_VALUE 100
+#define CUSTOM_ESTEPS_VALUE 99
 
 // FILAMENT SENSOR UNLOAD SETTINGS -----------------
 // If you have a filament sensor that is physically mounted to the machine you can enable MOUNTED_FILAMENT_SENSOR to set the unload length to 0 to prevent filament from backing up in the sensor by uncommenting MOUNTED_FILAMENT_SENSOR 
