@@ -280,7 +280,7 @@
 
 #define USE_WATCHDOG
 
-//#define BABYSTEPPING //ABR: I do not need this thing
+#define BABYSTEPPING
 #if ENABLED(BABYSTEPPING)
   #define BABYSTEP_INVERT_Z false
   #if ENABLED(FINE_BABYSTEPPING)
