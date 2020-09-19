@@ -3667,11 +3667,12 @@
 //ABR: I do not need this menu
 //#define INDIVIDUAL_AXIS_HOMING_MENU
 
-#if DISABLED(EZABL_ENABLE)
-  #define LEVEL_BED_CORNERS
-  #define LEVEL_CORNERS_INSET 30
-  #define LEVEL_CENTER_TOO
-#endif
+//ABR: I want to level corners when I have done major surgery to the system
+//#if DISABLED(EZABL_ENABLE)
+#define LEVEL_BED_CORNERS
+#define LEVEL_CORNERS_INSET 30
+#define LEVEL_CENTER_TOO
+//#endif
 
 #if ENABLED(BLTOUCH) && ENABLED(SLIM_1284P)
   #define SPEAKER_KILL
