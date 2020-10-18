@@ -2399,7 +2399,7 @@
 			#define Y_BED_SIZE 235
 			#define Z_MAX_POS 500
 		#else
-			#define X_BED_SIZE 200 //ABR: Reduced X-range due to direct drive motor getting in the way
+			#define X_BED_SIZE 235
 			#define Y_BED_SIZE 235
 			#define Z_MAX_POS 200 //ABR: Reduced X-range due to direct drive motor getting in the way
 		#endif

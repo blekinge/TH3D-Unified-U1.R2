@@ -935,8 +935,8 @@
   *      O-- FRONT --+
   *    (0,0)
   */
-  #define X_PROBE_OFFSET_FROM_EXTRUDER -48  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER -10  // Y offset: -front +behind [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER 48  // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER 2  // Y offset: -front +behind [the nozzle]
 #endif
 
 //===========================================================================
@@ -953,9 +953,9 @@
 // Example EStep Values: TH3D Aluminum Extruder - 95 ESteps, TH3D Tough Extruder - 463 ESteps, BMG Extruder - 415 ESteps
 // When installing a Tough Extruder or E3D Titan or Bondtech that is Geared you likely need to enable the REVERSE_E_MOTOR_DIRECTION option
 
-#define CUSTOM_ESTEPS //ABR: We need 99, otherwise underextrution
-//#define REVERSE_E_MOTOR_DIRECTION
-#define CUSTOM_ESTEPS_VALUE 99
+#define CUSTOM_ESTEPS
+#define REVERSE_E_MOTOR_DIRECTION
+#define CUSTOM_ESTEPS_VALUE 135
 
 // FILAMENT SENSOR UNLOAD SETTINGS -----------------
 // If you have a filament sensor that is physically mounted to the machine you can enable MOUNTED_FILAMENT_SENSOR to set the unload length to 0 to prevent filament from backing up in the sensor by uncommenting MOUNTED_FILAMENT_SENSOR 
@@ -1049,8 +1049,8 @@
 // custom XY offsets. This is provided for convenience and is unsupported with included product support.
 // How to use - measure (home XY then jog using the LCD 1mm at a time) the X and Y distance the nozzle is off
 // the build plate and then put those as NEGATIVE values below, positive values will NOT work (move your endstops to fix a positve offset).
-//#define HOME_ADJUST
-#define X_HOME_ADJUST_LOCATION -10
+#define HOME_ADJUST
+#define X_HOME_ADJUST_LOCATION -5
 #define Y_HOME_ADJUST_LOCATION -10
 
 // LINEAR ADVANCE ----------------------------------
