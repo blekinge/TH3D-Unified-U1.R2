@@ -3341,10 +3341,14 @@
     #define DEFAULT_Kp 31.89
     #define DEFAULT_Ki 4.99
     #define DEFAULT_Kd 50.94
-  #else  
-    #define  DEFAULT_Kp 22.2
-    #define  DEFAULT_Ki 1.08
-    #define  DEFAULT_Kd 114
+  #else
+    //Better heat cartridge
+    #define DEFAULT_Kp 28.35
+    //#define  DEFAULT_Kp 22.2
+    #define DEFAULT_Ki 3.46
+    //#define  DEFAULT_Ki 1.08
+    #define DEFAULT_Kd 58.06
+    //#define  DEFAULT_Kd 114
   #endif
 #endif 
 
